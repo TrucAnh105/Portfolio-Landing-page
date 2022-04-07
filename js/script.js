@@ -9,6 +9,7 @@ $(document).ready(function(){
 });
  //moving button
 const filter_btns = document.querySelectorAll(".filter-btn");
+ 
 filter_btns.forEach((btn) =>
   btn.addEventListener("click", () => {
       console.log('click here');
