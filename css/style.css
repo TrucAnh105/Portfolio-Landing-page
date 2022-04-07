@@ -114,6 +114,7 @@ img {
 header {
   width: 100%;
   overflow: hidden;
+  padding: 40px;
 }
 nav {
   width: 100%;
@@ -283,85 +284,17 @@ nav .container {
   border: 2px solid transparent;
 }
 
-/* MY SKILLS */
-.skills {
-  margin: 0 auto;
-  overflow: hidden;
-  margin-top: 80px;
-  width: 1100px;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-.skill-section {
-  margin-top: 32px;
-}
-.section-body .grid-2 {
-  align-items: center;
-  justify-content: center;
-}
-.skills .column-1 {
-  margin-right: 0;
-}
-.column-2 {
-  max-width: 450px;
-  margin-left: 0;
-}
-.skill-section .column-1 .text {
-  margin-top: 16px;
-}
-.skills-list {
-  margin: 0 auto;
-  padding-top: 32px;
-  padding-bottom: 20px;
-}
-.list {
-  margin: 16px 0;
-}
-.skill-title {
-  color: var(--dark-one);
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-.skill-bar {
-  width: 90%;
-  height: 8px;
-  border-radius: 4px;
-  background-color: #be7ea4;
-  position: relative;
-  overflow: hidden;
-}
-
-.skill-progress {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: var(--main-color);
-  transition: 1s;
-}
-.section-skill-photoshop .skill-progress {
-  width: 80%;
-}
-.section-skill-design .skill-progress {
-  width: 90%;
-}
-.section-skill-code .skill-progress {
-  width: 75%;
-}
-
 /* MY WORKS */
 .works {
   position: relative;
   display: block;
   width: 100%;
-  min-height: 1200px;
   margin-top: 120px;
 }
 .background-works {
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 450px;
   top: 0;
   left: 0;
   background-color: var(--light-one);
@@ -374,7 +307,7 @@ nav .container {
   background-color: white;
 }
 .works .container {
-  padding: 40px;
+  padding: 24px;
 }
 .filter {
   width: 100%;
@@ -451,7 +384,7 @@ nav .container {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding: 18px 32px;
+  padding: 24px 48px;
   opacity: 0;
   transition: 0.5s;
 }
@@ -462,7 +395,8 @@ nav .container {
 
 .fa-plus {
   font-size: 48px;
-  color: Dodgerblue;
+  padding: 12px;
+  color: white;
 }
 
 .imgs-description {
@@ -484,6 +418,211 @@ nav .container {
   opacity: 1;
 }
 
-.gallery-image:hover .imgs {
-  transform: translate(-50%, -50%) scale(1.1);
+/* MY SKILLS */
+.skills {
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 80px;
+  width: 1100px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
+.skill-section {
+  margin-top: 32px;
+}
+.section-body .grid-2 {
+  align-items: center;
+  justify-content: center;
+}
+.skills .column-1 {
+  margin-right: 0;
+}
+.column-2 {
+  max-width: 450px;
+  margin-left: 0;
+}
+.skill-section .column-1 .text {
+  margin-top: 16px;
+}
+.skills-list {
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+.list {
+  margin: 16px 0;
+}
+.skill-title {
+  color: var(--dark-one);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.skill-bar {
+  width: 90%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #be7ea4;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-progress {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transition: 1s;
+}
+.section-skill-photoshop .skill-progress {
+  width: 80%;
+}
+.section-skill-design .skill-progress {
+  width: 90%;
+}
+.section-skill-code .skill-progress {
+  width: 75%;
+}
+
+
+/* CONTACT */
+.contact{
+  position: relative;
+  width: 100%;
+  padding: 200px 0 120px ;
+  margin-top: 160px;
+
+}
+.contact:before,
+.contact:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+}
+.contact:before{
+  top: 0;
+  height: 30%;
+  background: url("../imgs/map.jpeg") center bottom / cover;
+}
+
+.contact:after {
+  top: 30%;
+  height: 70%;
+  background: url("../imgs/contact-bg.jpg") center bottom / cover;
+}
+
+.contact-box {
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  border-radius: 45px;
+  padding: 5.5rem 4.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact-box .title{
+  align-items: center;
+}
+.contact-info {
+  padding-right: 32px;
+}
+
+.contact-form {
+  padding-left: 32px;
+}
+
+
+.contact-info .title:after {
+  left: 0;
+  transform: initial;
+}
+
+.information-wrap {
+  padding: 24px 0;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.information:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+
+.contact-icon {
+  min-width: 46px;
+  height: 46px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--light-one);
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.contact-icon i {
+  line-height: 46px;
+}
+
+.info-text {
+  font-size: 1.3rem;
+  display: inline-block;
+  color: var(--dark-one);
+ 
+}
+
+.contact-form .title:after {
+  display: none;
+}
+
+.contact-form .title {
+  margin: 0;
+}
+
+.contact-form .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-column-gap: 0.6rem;
+}
+
+.contact-input {
+  padding: 1.2rem 2.1rem;
+  margin: 0.6rem 0;
+  border: none;
+  outline: none;
+  background: #f3f3f3;
+  border-radius: 4rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.contact-input::placeholder {
+  font-weight: 400;
+}
+
+.contact-input.textarea {
+  resize: none;
+  min-height: 280px;
+  border-radius: 2rem;
+}
+
+.contact-input:hover {
+  background: #ececec;
+}
+
+.contact-input:focus {
+  background: #eaeaea;
+}
+
+.contact-input .button {
+  margin-top: 0.6rem;
+
+}
+
