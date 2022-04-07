@@ -519,7 +519,7 @@ nav .container {
   height: 70%;
   background-color: white;
   border-radius: 45px;
-  padding: 5.5rem 4.5rem;
+  padding: 60px 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -534,6 +534,11 @@ nav .container {
   padding-left: 32px;
 }
 
+.contact-info .text {
+  margin-top: 30px;
+}
+
+
 
 .contact-info .title:after {
   left: 0;
@@ -542,6 +547,7 @@ nav .container {
 
 .information-wrap {
   padding: 24px 0;
+  margin-top: 30px;
 }
 
 .information {
@@ -577,7 +583,8 @@ nav .container {
 }
 
 .contact-form .title:after {
-  display: none;
+  /* display: none; */
+  transform: translateX(-110%);
 }
 
 .contact-form .title {
@@ -590,16 +597,17 @@ nav .container {
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   grid-column-gap: 0.6rem;
 }
+ 
 
 .contact-input {
-  padding: 1.2rem 2.1rem;
-  margin: 0.6rem 0;
+  padding: 18px 32px;
+  margin: 10px 0;
   border: none;
   outline: none;
   background: #f3f3f3;
-  border-radius: 4rem;
+  border-radius: 64px;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 24px;
   transition: 0.3s;
 }
 
@@ -609,8 +617,9 @@ nav .container {
 
 .contact-input.textarea {
   resize: none;
-  min-height: 280px;
-  border-radius: 2rem;
+  min-height: 200px;
+
+  border-radius: 32px;
 }
 
 .contact-input:hover {
@@ -621,8 +630,9 @@ nav .container {
   background: #eaeaea;
 }
 
-.contact-input .button {
-  margin-top: 0.6rem;
-
+.contact-form .button {
+  margin-top: 10px;
+  margin-right: 4px;
+  float:right; clear:right;
 }
 
