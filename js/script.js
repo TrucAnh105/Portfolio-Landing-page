@@ -7,6 +7,7 @@ $(document).ready(function(){
         loop: true
     });
 });
+
  //moving button
 const filter_btns = document.querySelectorAll(".filter-btn");
  
@@ -21,9 +22,12 @@ filter_btns.forEach((btn) =>
     $(".grid").isotope({ filter: filterValue });
   })
 );
+
 //transition grid
 $('.grid').isotope({
     itemSelector: '.grid-item',
     layoutMode: 'fitRows',
     TransitionDuration: "0,6s",
   });
+
+  
