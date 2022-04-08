@@ -970,6 +970,7 @@ nav.open .links {
 
   .header-content .image .img-element {
     max-width: 500px;
+    margin-top: 20px;
   }
 
   nav .container {
@@ -1316,7 +1317,7 @@ nav.open .links {
   }
 
   .header-title {
-    font-size: 2.3rem;
+    font-size: 16px;
   }
 
   .header-content .image {
