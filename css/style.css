@@ -416,7 +416,8 @@ nav.open .links {
 .grid-item {
   width: 33.33%;
   padding: 16px 20px;
-  height: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .gallery-image {
