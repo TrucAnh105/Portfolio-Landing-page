@@ -45,7 +45,7 @@ img {
   max-width: 1100px;
  
   margin: 0 auto;
-  /*padding: 0;*/
+  padding: 1rem;
   position: relative;
   z-index: 5;
   /*display: flex;*/
@@ -287,12 +287,12 @@ nav.open .hamburger-menu .bar {
 
 nav.open .hamburger-menu .bar:before {
   transform: translateY(0) rotate(45deg);
-  background-color: var(--light-one);
+  background-color: white;
 }
 
 nav.open .hamburger-menu .bar:after {
   transform: translateY(0) rotate(-45deg);
-  background-color: var(--light-one);
+  background-color: white;
 }
 
 nav.open .links {
@@ -427,6 +427,7 @@ nav.open .links {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  background-color: #e1d2eb;
 }
 
 .gallery-image .imgs {
@@ -787,7 +788,7 @@ nav.open .links {
 }
 
 .copyright .text span {
-  color: var(--main-color);
+  color: var(--light-one);
   cursor: pointer;
 }
 
@@ -826,7 +827,9 @@ nav.open .links {
 }
 
 .back-btn-wrap {
-  position: relative;
+  position:fixed;
+  bottom:20px;
+  right: 20px;
   margin-left: 2.5rem;
 }
 
@@ -1339,7 +1342,7 @@ nav.open .links {
   }
 
   .links a {
-    color: var(--light-one);
+    color: white;
   }
 
   .links a.active {
@@ -1477,7 +1480,7 @@ nav.open .links {
 
   .contact-box {
     grid-template-columns: 1fr;
-    padding: 3.2rem 2.7rem;
+
   }
 
   .contact-info {
@@ -1648,9 +1651,7 @@ nav.open .links {
     padding: 8rem 0 5rem 0;
   }
 
-  .contact-info {
-    display: none;
-  }
+
 
   .contact-box {
     padding: 2.3rem 2rem;
